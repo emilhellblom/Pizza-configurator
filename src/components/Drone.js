@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {updateDrone} from '../actions/pizza'
 import {connect} from 'react-redux'
+import {Input} from 'react-materialize'
+import '../containers/Page.css'
 
 class Drone extends Component {
     state = {
@@ -25,15 +27,11 @@ class Drone extends Component {
                     Do you want our ultra fast drone delivery?
                 </h1>
                 <form className='drone-form' onSubmit={this.handleSumbit}>
-                    <label>
-                        Yes
-                        <input type='radio' value='Yes' onChange={this.handleOptionChange} checked={this.state.droneOption === 'Yes'} />
-                    </label>
-                    <label>
-                        No
-                        <input type='radio' value='No' onChange={this.handleOptionChange} checked={this.state.droneOption === 'No'} />
-                    </label>
-                    <input type='submit' value='Next item'/>
+                    <div className='options-row'>
+                        <Input type='radio' value='Yes' onChange={this.handleOptionChange} checked={this.state.droneOption === 'Yes'} label='Yes' />
+                        <Input type='radio' value='No' onChange={this.handleOptionChange} checked={this.state.droneOption === 'No'} label='No' />
+                    </div>
+                    <input type='submit' value='Done!'/>
                 </form>
             </div>
         );

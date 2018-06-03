@@ -1,0 +1,57 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding-top: 10vh;
+    width: 80vw;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+}
+
+.bases, .toppings, .sauces, .drone {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding-top: 10vh;
+    width: 80vw;
+}
+
+.options-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 4vh 0;
+}
+
+.collapsible-body {
+    background-color: white;
+    z-index: 4;
+    padding: 10px;
+}
+
+.basket-header {
+    font-size: 200%;
+    margin: 0;
+}
+
+.basket-items {
+    font-size: 100%;
+}

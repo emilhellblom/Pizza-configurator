@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import Base from '../components/Base'
-import Sauce from '../components/Sauce'
-import Toppings from '../components/Toppings'
+import Options from '../components/Options'
 import Drone from '../components/Drone'
 import Basket from '../components/Basket'
+import './Page.css'
 
 
 class Page extends Component {
@@ -20,15 +19,13 @@ class Page extends Component {
                         Are you hungry for some pizza?
                     </h1>
                     <h2 className='welcome-subheader'>
-                        Click the button bellow to get started!
+                        Scroll down to get started!
                     </h2>
-                    <button>
+                    {/* <button>
                         START
-                    </button>
+                    </button> */}
                 </div>
-                <Base />
-                <Sauce />
-                <Toppings />
+                <Options />
                 <Drone />
             </div>
         );
