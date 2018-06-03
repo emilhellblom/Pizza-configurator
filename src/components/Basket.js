@@ -26,7 +26,7 @@ class Basket extends Component {
         return (
             <div >
                 <Collapsible>
-                    <CollapsibleItem header={!pizza.base && `Your basket` || (pizza.base && `Total price: ${this.calcBasket(pizza)}`)} icon='filter_drama'>
+                    <CollapsibleItem header={!pizza.base && `Your basket` || (pizza.base && `Total price: ${this.calcBasket(pizza)}`)} icon='shopping_basket'>
                         <div className='basket'>
                             <h1 className='basket-header'>
                                 Your order!
